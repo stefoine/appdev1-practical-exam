@@ -1,0 +1,53 @@
+.movie-card-container {
+  position: relative;
+}
+
+.movie-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rating-display {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star {
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #8a8a8a;
+  font-size: 1.3rem;
+}
+
+.star:hover {
+  color: #e6b800;
+  transform: scale(1.1);
+}
+
+.star.filled {
+  color: #e6b800;
+}
+
+.watchlist-btn {
+  padding: 0.5rem 1rem;
+  background: rgba(230, 184, 0, 0.2);
+  border: 1px solid #ffd699;
+  color: #e6b800;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.85rem;
+}
+
+.watchlist-btn:hover {
+  background: #ffd699;
+  color: #5a5a5a;
+}
+
+.watchlist-btn.on-watchlist {
+  background: #ffd699;
+  color: #5a5a5a;
+  border-color: #ffd699;
+}

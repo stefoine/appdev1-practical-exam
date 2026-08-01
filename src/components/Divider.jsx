@@ -1,8 +1,5 @@
 function Divider() {
-
-    return (
-        <hr />
-    )
+  return <div className="divider"></div>;
 }
 
-export default Divider
+export default Divider;
