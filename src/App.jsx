@@ -1,5 +1,5 @@
 import Header from "./components/Header"
-import MovieList from "./components/MovieList"
+import MovieList from "./components/movies/MovieList"
 import Footer from "./components/Footer"
 
 function App() {

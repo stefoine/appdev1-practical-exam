@@ -1,4 +1,4 @@
-import Divider from "./Divider"
+import Line from "../Divider"
 import MovieOne from "./MovieOne"
 import MovieTwo from "./MovieTwo"
 import MovieThree from "./MovieThree"
@@ -8,9 +8,9 @@ function LoveteamList() {
     <>
       <h2>Featured Loveteam Movies</h2>
       <MovieOne />
-      <Divider />
+      <Line />
       <MovieTwo />
-      <Divider />
+      <Line />
       <MovieThree />
     </>
   );

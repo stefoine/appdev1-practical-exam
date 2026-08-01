@@ -1,9 +1,11 @@
+import { FOOTER_TEXT } from "./constants";
+
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2026 My Favorite Loveteam Movies.</p>
+      <p>{FOOTER_TEXT}</p>
     </footer>
   );
 }
 
-export default Footer
+export default Footer;

@@ -1,11 +1,12 @@
-function Header() {
+import { SITE_TITLE, SITE_DESCRIPTION } from "./constants";
 
+function Header() {
   return (
     <header>
-      <h1>🎬 Loveteam Movies List</h1>
-      <p>My favorite on-screen couples and their movies</p>
+      <h1>{SITE_TITLE}</h1>
+      <p>{SITE_DESCRIPTION}</p>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
