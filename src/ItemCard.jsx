@@ -1,4 +1,4 @@
-import { APP_NAME, AUTHOR } from './components/constants';
+import { APP_NAME, AUTHOR } from '../constants';
 
 function ItemCard() {
   const name = 'Sample Item';
@@ -7,15 +7,17 @@ function ItemCard() {
   const isAvailable = true;
 
   return (
-    <div class="item-card">
-      <h3>{name}</h3>
-      <p>Category: {category}</p>
-      <p>{count * 4} in stock across all branches</p>
-      <p>{isAvailable ? "Available"}</p>
-      <p>{APP_NAME by AUTHOR}</p>
-    </div>
-    <p>Featured: {name}</p>
+    <>
+      <div className="item-card">
+        <h3>{name}</h3>
+        <p>Category: {category}</p>
+        <p>{count * 4} in stock across all branches</p>
+        <p>{isAvailable ? "Available" : "Not Available"}</p>
+        <p>{`${APP_NAME} by ${AUTHOR}`}</p>
+      </div>
+      <p>Featured: {name}</p>
+    </>
   );
 }
 
-export ItemCard;
+export default ItemCard;
